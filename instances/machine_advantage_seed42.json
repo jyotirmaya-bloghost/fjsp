@@ -1,0 +1,231 @@
+{
+  "meta": {
+    "seed": 42,
+    "instance_class": "machine_advantage",
+    "params": {
+      "number_of_jobs": 6,
+      "number_of_machines": 5,
+      "operations_per_job": [
+        2,
+        4
+      ],
+      "machine_flexibility": 0.5,
+      "processing_time_range": [
+        5,
+        20
+      ],
+      "processing_time_variance": 1.0,
+      "bottleneck_probability": 0.0,
+      "machine_advantage": {
+        "1": 0.2
+      }
+    },
+    "num_machines": 5,
+    "num_jobs": 6,
+    "total_operations": 14
+  },
+  "jobs": [
+    {
+      "job_id": 1,
+      "operations": [
+        {
+          "job_id": 1,
+          "op_id": 1,
+          "eligible_machines": [
+            2,
+            5
+          ],
+          "proc_times": {
+            "2": 8,
+            "5": 15
+          }
+        },
+        {
+          "job_id": 1,
+          "op_id": 2,
+          "eligible_machines": [
+            5
+          ],
+          "proc_times": {
+            "5": 7
+          }
+        }
+      ]
+    },
+    {
+      "job_id": 2,
+      "operations": [
+        {
+          "job_id": 2,
+          "op_id": 1,
+          "eligible_machines": [
+            1,
+            5
+          ],
+          "proc_times": {
+            "1": 3,
+            "5": 14
+          }
+        },
+        {
+          "job_id": 2,
+          "op_id": 2,
+          "eligible_machines": [
+            2,
+            3,
+            4
+          ],
+          "proc_times": {
+            "2": 16,
+            "3": 15,
+            "4": 9
+          }
+        }
+      ]
+    },
+    {
+      "job_id": 3,
+      "operations": [
+        {
+          "job_id": 3,
+          "op_id": 1,
+          "eligible_machines": [
+            2,
+            3
+          ],
+          "proc_times": {
+            "2": 15,
+            "3": 8
+          }
+        },
+        {
+          "job_id": 3,
+          "op_id": 2,
+          "eligible_machines": [
+            1,
+            2,
+            3
+          ],
+          "proc_times": {
+            "1": 3,
+            "2": 14,
+            "3": 13
+          }
+        },
+        {
+          "job_id": 3,
+          "op_id": 3,
+          "eligible_machines": [
+            1,
+            3,
+            4
+          ],
+          "proc_times": {
+            "1": 3,
+            "3": 13,
+            "4": 14
+          }
+        }
+      ]
+    },
+    {
+      "job_id": 4,
+      "operations": [
+        {
+          "job_id": 4,
+          "op_id": 1,
+          "eligible_machines": [
+            1,
+            3
+          ],
+          "proc_times": {
+            "1": 3,
+            "3": 12
+          }
+        },
+        {
+          "job_id": 4,
+          "op_id": 2,
+          "eligible_machines": [
+            2,
+            3,
+            4
+          ],
+          "proc_times": {
+            "2": 14,
+            "3": 14,
+            "4": 14
+          }
+        }
+      ]
+    },
+    {
+      "job_id": 5,
+      "operations": [
+        {
+          "job_id": 5,
+          "op_id": 1,
+          "eligible_machines": [
+            2,
+            5
+          ],
+          "proc_times": {
+            "2": 12,
+            "5": 19
+          }
+        },
+        {
+          "job_id": 5,
+          "op_id": 2,
+          "eligible_machines": [
+            1,
+            3
+          ],
+          "proc_times": {
+            "1": 1,
+            "3": 11
+          }
+        }
+      ]
+    },
+    {
+      "job_id": 6,
+      "operations": [
+        {
+          "job_id": 6,
+          "op_id": 1,
+          "eligible_machines": [
+            2
+          ],
+          "proc_times": {
+            "2": 13
+          }
+        },
+        {
+          "job_id": 6,
+          "op_id": 2,
+          "eligible_machines": [
+            2,
+            4
+          ],
+          "proc_times": {
+            "2": 17,
+            "4": 12
+          }
+        },
+        {
+          "job_id": 6,
+          "op_id": 3,
+          "eligible_machines": [
+            2,
+            5
+          ],
+          "proc_times": {
+            "2": 13,
+            "5": 15
+          }
+        }
+      ]
+    }
+  ]
+}
